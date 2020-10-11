@@ -4,8 +4,23 @@ Returns: a List of integers
 '''
 def product_of_all_other_numbers(arr):
     # Your code here
+    # We make a list with the length of the arr to hold our product
+    my_arr = [0] * len(arr)
+    # For each integer, we find the product of all the integers before it, storing
+    # the total product so far each time
+    for i in range(0, len(arr)):
+        copy = arr.copy()
+        copy[i] = 1
+        total = 1
+    # For each integer, we find the product of all the integers
+    # after it. since each index in products already has the
+    # product of all the integers before it, now we're storing
+    # the total product of all other integers
+        for val in copy:
+            total = total * val
+        my_arr[i] = total
 
-    pass
+    return my_arr
 
 
 if __name__ == '__main__':

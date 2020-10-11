@@ -2,10 +2,12 @@
 Input: an integer
 Returns: an integer
 '''
-
+# Function for Fibonacci sequence.
 def eating_cookies(n, cache=None):
+# Create cache that is none
     if cache == None:
             cache = [0] * (n + 1)
+# cache key 0 value is 1
     if n <= 1:
             cache[n] = 1
     elif  n == 2:
