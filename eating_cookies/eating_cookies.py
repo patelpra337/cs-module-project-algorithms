@@ -1,6 +1,7 @@
 '''
 Input: an integer
 Returns: an integer
+0 1 1 2 3 5 8 13 21
 '''
 # Function for Fibonacci sequence using recursion.
 def eating_cookies(n, cache=None):
@@ -26,12 +27,14 @@ if __name__ == "__main__":
 
     print(f"There are {eating_cookies(num_cookies)} ways for Cookie Monster to each {num_cookies} cookies")
 
-'''Fibonacci series is basically a sequence. In that sequence, each number is sum 
+'''Fibonacci recursive series is basically a sequence. In that sequence, each number is sum 
 of previous two preceding number of that sequence. Initial two number of the series 
 is either 0 and 1 or 1 and 1. We will consider 0 and 1 as first two numbers in our example. 
 So, the first few number in this series are
 
-0 1 1 2 3 5 8 13 21 34
+0 1 1 2 3 5 8 13 21
+
+fib(n)=fib(n-1)+fib(n-2)
 
 1st Fibonacci number = 0 (by assumption)
 2nd Fibonacci number = 1 (by assumption)
